@@ -1,102 +1,112 @@
 <!DOCTYPE html>
 <html>
- <head>
-    <meta charset="UTF-8"/>
-    <title>Danil S</title>
- </head>
- <body>
-    <table cellspacing="10">
-        <tr>
-            <td>
-                <img src="Фото Даня.jpg" width="180" alt="Тут мое фото"/>
-            </td>
-            <td>
-                <h1>Данил Шкода</h1>
-                <p><em>Я начинающий разработчик <strong>JavaScript.</strong></em></p>
-                <p>Я люблю заниматься спортом и открывать для себя новые горизонты.</p>
-            </td>
-        </tr>
-    </table>
-    
-    <hr>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="resume, Danil, DS">
+        <meta name="description" content="Это сайт - резюме Данила Шкоды">
+        <title>Resume DS</title>
+        <link href="style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="info">
+                <img src="Фото Даня.jpg" alt="Тут мое фото"
+                class="avatar"/>
+                
+                <div class="info-text">
+                    <h1>Данил Шкода</h1>
+                    <p>Я начинающий разработчик <strong>JavaScript.</strong></em></p>
+                    <p>Я люблю заниматься спортом и открывать для себя новые горизонты.</p>
 
-    <h2>Мои социальные сети</h2>
-    <ul>
-        <li><a href="https://instagram.com/shkodadanil" 
-        target="_blank">Instagram</a></li>
-        <li><a href="https://t.me/shkodadanil"
-        target="_blank">Telegram</a></li>
-    </ul>
+                    <h4>Мои социальные сети</h4>
+                    
+                    <a href="https://instagram.com/shkodadanil" target="_blank">Instagram</a>
+                    |
+                    <a href="https://t.me/shkodadanil"target="_blank">Telegram</a>
+                    |
+                    <a href="https://www.linkedin.com/in/danil-shkoda-413750171/" target="_blank">Linkedin</a>
+                </div>
+            </div>
 
-    <hr>
+            <div class="card bg-yellow">
+                <h2>Мои увлечения</h2>
+                <ol class="list">
+                    <li>Футбол</li>
+                    <li>Бокс</li>
+                    <li>Компьютерные игры</li>
+                    <li>Езда на авто</li>
+                </ol>
+            </div>
 
-    <h2>Мои увлечения</h2>
-    <ol>
-        <li>Спорт:Футбол,Бокс</li>
-        <li>Компьютерные игры</li>
-        <li>Езда на авто</li>
-    </ol>
+            <div class="card bg-green">
+                <h2>Опыт работы</h2>
+                <table class="table">
+                    <tr>
+                        <td>IBS Group</td>
+                        <td>Sales Menager</td>
+                        <td>2016-2018</td>
+                    </tr>
+                    <tr>
+                        <td>Company Automir</td>
+                        <td>Sales Menager</td>
+                        <td>2018-2020</td>
+                    </tr>
+                    <tr>
+                        <td>Company Automir</td>
+                        <td>Chief Executive Officer</td>
+                        <td>2020-2022</td>
+                    </tr>
+                </table>
+            </div>
 
-    <hr>
-
-    <h2>Опыт работы</h2>
-    <table>
-        <tr>
-            <th>Компания</th>
-            <th>Должность</th>
-            <th>Год</th>
-        </tr>
-        <tr>
-            <td>IBS Group</td>
-            <td>Sales Menager</td>
-            <td>2017-2018</td>
-        </tr>
-        <tr>
-            <td>Company Automir</td>
-            <td>Sales Menager</td>
-            <td>2018-2020</td>
-        </tr>
-        <tr>
-            <td>Company Automir</td>
-            <td>Chief Executive Officer</td>
-            <td>2020-2022</td>
-        </tr>
-    </table>
-
-    <hr>
-
-    <h2>Полезная документация</h2>
-    <ul><li><a href="documents.html">Посмотреть список</a></li></ul>
-
-    <hr>
-
-    <h2>Связаться со мной</h2>
-
-    <form action="/">
-        <label for="name">Ваше имя</label> 
-        <input type="text" id="name" 
-        placeholder="Введите Ваше имя">
-
-        <br>
-
-        <label for="email">Ваше Email</label>
-        <input type="email" id="email" 
-        placeholder="Введите email">
-
-        <br>
-
-        <label for="text">Ваше сообщение</label>
-
-        <br>
-
-        <textarea id="text" rows="5" cols="30"></textarea>
+            <div class="card bg-red">
+                <h2>Полезная документация</h2>
+                <ul class="link-list">
+                    <li>
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">HTML - язык гипертекстовой разметки</a>
+                    </li>
+                    <li>
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">CSS - язык иерархических правил</a>
+                    </li>
+                </ul>
+            </div>
         
-        <br>
+           <div class="contact">
+                <h2>Связаться со мной</h2>
+                
+                <form action="/">
+                    <div class="row">
+                        <div class="form-group">
+                            <label for="name">Ваше имя:</label> 
+                            <input type="text" id="name"
+                            placeholder="Введите Ваше имя">
+                        </div>
 
-        <input type="submit" value="Связаться!">
+                        <div class="form-group">
+                            <label for="email">Ваш email:</label>
+                            <input type="email" id="email" 
+                            placeholder="Введите email">
+                        </div>
+                    </div>
 
-    </form>
-    
+                    <div class="form-group">
+                        <label for="massage">Ваше сообщение:</label>
+                        <textarea id="massage" rows="5" cols="30"></textarea>
+                    </div>
 
- </body>
+                    <input class="btn" type="submit" value="Связаться!">
+                </form>
+            </div>
+            
+            
+            <div class="position">
+                <div class="box"></div>
+            </div>
+        </div>
+
+        
+        <div style="margin-bottom: 500px;"></div>
+    </body>
 </html>
